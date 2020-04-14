@@ -69,4 +69,3 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 end
-render :layout => false
