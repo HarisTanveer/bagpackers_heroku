@@ -1,0 +1,45 @@
+{:uriI"…file://node_modules/eventsource/example/index.html?type=text/html&id=adf27539170484d0f418120def3ea021d8d1e317f6732cc7c65fef3519c66b44:ET:load_pathI"node_modules;T:filenameI"0node_modules/eventsource/example/index.html;T:	nameI"eventsource/example/index;T:logical_pathI"#eventsource/example/index.html;T:content_typeI"text/html;T:sourceI"å<!DOCTYPE html>
+<html>
+<head>
+<style>
+.col {
+	float:left;
+	width:50%;
+	left:50%;
+}
+</style>
+</head>
+
+<body>
+<div class=col>
+  <h2>EventSource</h2>
+  <ul id=es-messages>
+  </ul>
+</div>
+
+<div class=col>
+  <h2>EventSourcePolyfill</h2>
+  <ul id=es-polyfill-messages>
+  </ul>
+</div>
+
+<script src=/eventsource-polyfill.js></script>
+
+<script>
+function subscribe(es, ul) {
+  es.addEventListener('server-time', function (e) {
+    var li = document.createElement("LI");
+    li.appendChild(document.createTextNode(e.data));
+    ul.appendChild(li);
+  });
+}
+
+subscribe(new EventSource('/sse'),         document.getElementById('es-messages'));
+subscribe(new EventSourcePolyfill('/sse'), document.getElementById('es-polyfill-messages'));
+</script>
+</body>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI">file-digest://node_modules/eventsource/example/index.html;TTF:charsetI"
+utf-8;F:digest"%:„®<_¼¼ÕÆ?ÇÑXÀ©ø‡¸.Š¸†ÀŽ-Ž¼rY:lengthiå:dependencies_digest"%ëªž˜QæºŽÁDßQ~: ƒ%¿0@ƒ=Ã|÷XWÝÝ:idI"Eadf27539170484d0f418120def3ea021d8d1e317f6732cc7c65fef3519c66b44;F:
+mtimel+ûb†^

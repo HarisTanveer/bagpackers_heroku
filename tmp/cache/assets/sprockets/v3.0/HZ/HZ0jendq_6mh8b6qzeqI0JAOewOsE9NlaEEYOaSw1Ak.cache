@@ -1,0 +1,14 @@
+{:uriI"ãfile://node_modules/vm-browserify/example/run/index.html?type=text/html&id=b30c603f353a1d9bee87bd1e70e24f2b546415a3ece9c99b35b3557076207557:ET:load_pathI"node_modules;T:filenameI"6node_modules/vm-browserify/example/run/index.html;T:	nameI"$vm-browserify/example/run/index;T:logical_pathI")vm-browserify/example/run/index.html;T:content_typeI"text/html;T:sourceI"‹<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="/bundle.js"></script>
+  </head>
+  <body>
+    result = <span id="res"></span>
+  </body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Dfile-digest://node_modules/vm-browserify/example/run/index.html;TTF:charsetI"
+utf-8;F:digest"%ê=<*W°FÓû“Æpb√î$∫ôH¡ïö”ò◊SÔ∑Ç:lengthi‹:dependencies_digest"%›ÇëÕç´bI⁄πÑˇ∆iÃ∞≈ä;Ø¥Œøxòß∑gW:idI"Eb30c603f353a1d9bee87bd1e70e24f2b546415a3ece9c99b35b3557076207557;F:
+mtimel+›bÜ^

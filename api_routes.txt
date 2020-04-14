@@ -1,0 +1,21 @@
+Api Routes :
+
+User registration :
+Type: POST
+Url: api/user/
+Params:
+email=abc
+password=abc
+name=Taji
+
+Login:
+Type: POST
+URl: /oath/token
+Params:
+Email
+Password
+grant_type
+
+This returns an access_token
+=> before_action :doorkeeper-authorize!
+Use this where authentication required and pass access_token in header of request

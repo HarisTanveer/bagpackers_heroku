@@ -1,0 +1,38 @@
+<!-- Breadcrumb -->
+<section class="breadcrumb-outer text-center">
+  <div class="container">
+    <div class="breadcrumb-content">
+      <h2>Locations</h2>
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="<%= root_path %>">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Locations</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="section-overlay"></div>
+</section>
+<!-- BreadCrumb Ends -->
+
+<!-- Popular Packages -->
+<section class="popular-packages pad-bottom-80">
+  <div class="container">
+    <div class="section-title">
+      <h2>Popular <span>Locations</span></h2>
+    </div>
+    <div class="row" id="hotels-div">
+      <%= render @locations %>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="pagination-content">
+          <div class="pagination" id="hotel-paginate" >
+            <%= js_will_paginate @locations%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Popular Packages Ends -->

@@ -1,0 +1,17 @@
+{:uriI"file://node_modules/console-browserify/test/static/index.html?type=text/html&id=7bea2593d6938c7d0c5ed9d6ff0e8b30c5ce142e0830a7293a0df86ed0b4fbf9:ET:load_pathI"node_modules;T:filenameI";node_modules/console-browserify/test/static/index.html;T:	nameI")console-browserify/test/static/index;T:logical_pathI".console-browserify/test/static/index.html;T:content_typeI"text/html;T:sourceI"<!doctype html>
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=8" >
+    <title>TAPE Example</title>
+    <script src="/testem.js"></script>
+    <script src="test-adapter.js"></script>
+    <script src="bundle.js"></script>
+</head>
+<body>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ifile-digest://node_modules/console-browserify/test/static/index.html;TTF:charsetI"
+utf-8;F:digest"%æ+´‡¡e¹Im\>0·¸C&{_½ğPr'e]3TÕÍÆ:lengthi:dependencies_digest"%‹Ş°"÷JºÑkı n6h”f¡Ô+…‘±÷gîÚQ	:idI"E7bea2593d6938c7d0c5ed9d6ff0e8b30c5ce142e0830a7293a0df86ed0b4fbf9;F:
+mtimel+Üb†^

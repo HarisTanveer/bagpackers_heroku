@@ -1,0 +1,31 @@
+{:uriI"’file://node_modules/node-pre-gyp/lib/util/nw-pre-gyp/index.html?type=text/html&id=c1ad4f0557eb93b64b3078baf58ee21eb918b6fd6447ff58b6b55edd1f0a147b:ET:load_pathI"node_modules;T:filenameI"=node_modules/node-pre-gyp/lib/util/nw-pre-gyp/index.html;T:	nameI"+node-pre-gyp/lib/util/nw-pre-gyp/index;T:logical_pathI"0node-pre-gyp/lib/util/nw-pre-gyp/index.html;T:content_typeI"text/html;T:sourceI"<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Node-webkit-based module test</title>
+<script>
+function nwModuleTest(){
+   var util = require('util');
+   var moduleFolder = require('nw.gui').App.argv[0];
+   try {
+      require(moduleFolder);
+   } catch(e) {
+      if( process.platform !== 'win32' ){
+         util.log('nw-pre-gyp error:');
+         util.log(e.stack);
+      }
+      process.exit(1);
+   }
+   process.exit(0);
+}
+</script>
+</head>
+<body onload="nwModuleTest()">
+<h1>Node-webkit-based module test</h1>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Kfile-digest://node_modules/node-pre-gyp/lib/util/nw-pre-gyp/index.html;TTF:charsetI"
+utf-8;F:digest"%e’ã(wV”™#øÊza'H"FïµÒm´ÅšÿIw:lengthi:dependencies_digest"%ý>²0­¾LÿÄñ%”2MmG^ÎÕ}¿<ÁÆ¶Æ#ýv¸:idI"Ec1ad4f0557eb93b64b3078baf58ee21eb918b6fd6447ff58b6b55edd1f0a147b;F:
+mtimel+éb†^

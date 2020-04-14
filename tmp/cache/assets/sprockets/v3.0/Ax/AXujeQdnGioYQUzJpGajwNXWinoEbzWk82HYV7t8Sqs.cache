@@ -1,0 +1,17 @@
+{:uriI"ãfile://node_modules/crypto-browserify/example/index.html?type=text/html&id=e346c231e4d760d386d9fd88a598a4828b15a8073329ebd2b193a1c9b8797f73:ET:load_pathI"node_modules;T:filenameI"6node_modules/crypto-browserify/example/index.html;T:	nameI"$crypto-browserify/example/index;T:logical_pathI")crypto-browserify/example/index.html;T:content_typeI"text/html;T:sourceI"=<!doctype html>
+<html>
+<script src=bundle.js></script>
+<body>
+  <pre>
+  require('crypto').createHash('sha1').update('abc').digest('hex') == '<span id=ans></span>'
+  </pre>
+</body>
+<script>
+  document.getElementById('ans').innerHTML = require('crypto').createHash('sha1').update('abc').digest('hex')
+</script>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Dfile-digest://node_modules/crypto-browserify/example/index.html;TTF:charsetI"
+utf-8;F:digest"%Áy[WãëQmóí—¶¯qo@éÊﬁˆØ¡∂èr¡ï¸ÃÈ:lengthi=:dependencies_digest"%™≠Á–Ωﬁ•>∏Ñ!#¸îÁﬁøDÖ9DØŒ,mç3:idI"Ee346c231e4d760d386d9fd88a598a4828b15a8073329ebd2b193a1c9b8797f73;F:
+mtimel+‹bÜ^

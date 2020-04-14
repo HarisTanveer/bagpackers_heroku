@@ -1,0 +1,18 @@
+<div class="col-md-4 col-sm-6 col-xs-12" id="hotel-<%= tour.id %>">
+  <div class="package-item">
+    <a href="<%= tour_path(tour) %>">
+      <div class="hotel-thumbnail">
+        <% if tour.trip_images.attached? %>
+          <%= image_tag url_for(tour.trip_images[0])  , class: "hotel-cover-photo-thumbnail", alt:"Image"%>
+        <% else %>
+          <%= image_tag url_for("")  , class: "hotel-cover-photo-thumbnail", alt:"Image" %>
+        <% end %>
+      </div>
+      <div class="package-content">
+        <h5>Price: <span><%= tour.price %></span></h5>
+        <h3><a href="<%= tour_path(tour) %>"><%= tour.title %></a></h3>
+        <p> Seats: <%= tour.seats %></p>
+      </div>
+    </a>
+  </div>
+</div>

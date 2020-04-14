@@ -1,0 +1,24 @@
+{:uriI"„file://node_modules/loglevel/test/test-qunit.html?type=text/html&id=639f99237d7182a45a7015c35ac98ee236f5ad5cec2f0afd4e4cb6cdb4299be8:ET:load_pathI"node_modules;T:filenameI"/node_modules/loglevel/test/test-qunit.html;T:	nameI"loglevel/test/test-qunit;T:logical_pathI""loglevel/test/test-qunit.html;T:content_typeI"text/html;T:sourceI"<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>QUnit Integration Test</title>
+	<link rel="stylesheet" href="../node_modules/qunitjs/qunit/qunit.css">
+</head>
+<body>
+	<script src="../lib/loglevel.js" loglevel-name="logging"></script>
+	<script>
+		var logging = log.noConflict();
+	</script>
+        <!-- Pretend the users code is included here -->
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+	<script src="../node_modules/qunitjs/qunit/qunit.js"></script>
+	<script src="test-qunit.js"></script>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"=file-digest://node_modules/loglevel/test/test-qunit.html;TTF:charsetI"
+utf-8;F:digest"%¶ñ´¥ƒ@­´Ÿ'[6Cêƒ#0ÁÂ%EÿÃƒŽœå:lengthi:dependencies_digest"%ö#Òœïºi$ýOU)×ëÖa(møÅŽžH%Ç«<òËž:idI"E639f99237d7182a45a7015c35ac98ee236f5ad5cec2f0afd4e4cb6cdb4299be8;F:
+mtimel+ób†^

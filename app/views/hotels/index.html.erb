@@ -1,0 +1,46 @@
+<!-- Breadcrumb -->
+<section class="breadcrumb-outer text-center">
+  <div class="container">
+    <div class="breadcrumb-content">
+      <h2>Hotels</h2>
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="<%= root_path %>">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Hotels</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="section-overlay"></div>
+</section>
+<!-- BreadCrumb Ends -->
+
+<!-- Popular Packages -->
+<section class="popular-packages pad-bottom-80">
+  <div class="container">
+    <div class="section-title">
+      <h2>Popular <span>Hotels</span></h2>
+    </div>
+    <div class="row" id="hotels-div">
+      <%= render @hotels %>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="pagination-content">
+          <div class="pagination" id="hotel-paginate" >
+            <%= js_will_paginate @hotels%>
+          </div>
+<!--          <ul class="pagination">-->
+<!--            <li><a href="#"><i class="fa fa-angle-double-left" aria-hidden="false"></i></a></li>-->
+<!--            <li class="active"><a href="#">1</a></li>-->
+<!--            <li><a href="#">2</a></li>-->
+<!--            <li><a href="#">3</a></li>-->
+<!--            <li><a href="#">4</a></li>-->
+<!--            <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>-->
+<!--          </ul>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Popular Packages Ends -->

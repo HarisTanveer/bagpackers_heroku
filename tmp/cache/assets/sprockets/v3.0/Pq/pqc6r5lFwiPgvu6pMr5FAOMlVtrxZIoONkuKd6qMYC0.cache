@@ -1,0 +1,48 @@
+{:uriI"Üfile://node_modules/faye-websocket/examples/ws.html?type=text/html&id=5fa1764bb1f146960a628359b5bbacb92aa208fb847737201011ad536ffecd48:ET:load_pathI"node_modules;T:filenameI"1node_modules/faye-websocket/examples/ws.html;T:	nameI"faye-websocket/examples/ws;T:logical_pathI"$faye-websocket/examples/ws.html;T:content_typeI"text/html;T:sourceI"â<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>WebSocket test</title>
+  </head>
+  <body>
+
+    <h1>WebSocket test</h1>
+    <ul></ul>
+
+    <script type="text/javascript">
+      var logger = document.getElementsByTagName('ul')[0],
+          Socket = window.MozWebSocket || window.WebSocket,
+          protos = ['foo', 'bar', 'xmpp'],
+          socket = new Socket('ws://' + location.hostname + ':' + location.port + '/', protos),
+          index  = 0;
+
+      var log = function(text) {
+        logger.innerHTML += '<li>' + text + '</li>';
+      };
+
+      socket.addEventListener('open', function() {
+        log('OPEN: ' + socket.protocol);
+        socket.send('Hello, world');
+      });
+
+      socket.onerror = function(event) {
+        log('ERROR: ' + event.message);
+      };
+
+      socket.onmessage = function(event) {
+        log('MESSAGE: ' + event.data);
+        setTimeout(function() { socket.send(++index + ' ' + event.data) }, 2000);
+      };
+
+      socket.onclose = function(event) {
+        log('CLOSE: ' + event.code + ', ' + event.reason);
+      };
+    </script>
+
+  </body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"?file-digest://node_modules/faye-websocket/examples/ws.html;TTF:charsetI"
+utf-8;F:digest"%ÉevÔá;˝8ﬂˆëuÿßÛππ¬6),bà`€ùÊÔ:lengthiâ:dependencies_digest"%¯˛QÒeHyLÌì.x.&*^q-á≤0nb…ª‘:idI"E5fa1764bb1f146960a628359b5bbacb92aa208fb847737201011ad536ffecd48;F:
+mtimel+˙bÜ^

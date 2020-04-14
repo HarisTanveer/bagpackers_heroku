@@ -1,0 +1,9 @@
+$("#tour_errors").innerText = "";
+<% if @tour.errors.any? %>
+<% @tour.errors.full_messages.each do |message| %>
+$("#tour_errors").append("<p> <%= message %> </p>");
+<% end %>
+$('html, body').animate({
+    scrollTop: $("#tour_errors").offset().top
+}, 1000);
+<% end %>

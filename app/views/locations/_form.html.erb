@@ -1,0 +1,75 @@
+
+<!-- Breadcrumb -->
+<section class="breadcrumb-outer text-center">
+  <div class="container">
+    <div class="breadcrumb-content">
+      <h2>Checkout</h2>
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Shop</a></li>
+          <li class="breadcrumb-item active" aria-current="page">CheckOut</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="section-overlay"></div>
+</section>
+<!-- BreadCrumb Ends -->
+
+<!-- checkout -->
+<section id="checkout-main" class="checkout-main section-padding">
+  <div class="container">
+    <div class="checkout-inner">
+      <div class="checkout-info">
+        <div class="form-title form-title-1">
+          <h3>Add A New Location</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-xs-12">
+            <div class="checkout-billing">
+              <%= form_with(model: location, local: true) do |form| %>
+                <% if location.errors.any? %>
+                  <div id="error_explanation">
+                    <h2><%= pluralize(location.errors.count, "error") %> prohibited this hotel from being saved:</h2>
+                    <ul>
+                      <% location.errors.full_messages.each do |message| %>
+                        <li><%= message %></li>
+                      <% end %>
+                    </ul>
+                  </div>
+                <% end %>
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <%= form.label :name,style: 'text-transform: capitalize', class:"label-login" %>
+                      <%= form.text_field :name,placeholder:"Name", style: 'text-transform: capitalize', class:"form-control" %>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <%= form.label :description,style: 'text-transform: capitalize' , class:"label-login"  %>
+                      <%= form.cktext_area :description, class:"form-control" %>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                      <%= form.label :images,style: 'text-transform: capitalize', class:"label-login" %>
+                      <%= form.file_field :images,style: 'text-transform: capitalize', multiple:"true" %>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <button type="submit" data-hover="Add Now" class="btn btn-red" style="color: #FFFFFF">
+                      <span class="text">Add Hotel </span>
+                  </button>
+                  </div>
+                </div>
+              <%end%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End checkout -->

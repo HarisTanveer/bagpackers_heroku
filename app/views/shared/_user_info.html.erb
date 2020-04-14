@@ -1,0 +1,21 @@
+<div class="card widget-item text-center">
+  <div class="widget-body">
+    <ul class="like-page-list-wrapper">
+      <li>
+        <div class="profile-thumb">
+          <a href="<%= user_path(user) %>">
+            <figure class="profile-thumb-middle" style="height: 100px; width: 100px;">
+              <img src="<%= rails_blob_url(user.profile_picture) %>" alt="profile picture">
+            </figure>
+          </a>
+        </div>
+      </li>
+      <!-- profile picture end -->
+      <li>
+        <div class="posted-author follow">
+          <h4 class=""><%= user.name %></h4>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+<div class="col-sm-4" id="hotel-room-<%#= hotel_room.id %>">
+  <div class="package-item">
+    <a href="<%= hotel_hotel_room_path(hotel_room.hotel,hotel_room) %>">
+      <div class="hotel-room-thumbnail">
+        <%= image_tag hotel_room.hotel_room_pictures[0],class: "hotel-cover-photo-thumbnail", alt:'Hotel Room' %>
+      </div>
+      <div class="package-content">
+        <h5>Starting: <span>$<%= hotel_room.price %></span> / PER </h5>
+        <h3><a href="#"><%= hotel_room.room_type %></a></h3>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!--<div class="timeline-block" id="hotel-room-<%#= hotel_room.id %>">-->
+<!--  <div class="timeline-title"><span><%#= hotel_room.room_type %></span></div>-->
+<!--  <div class="timeline-point"><i class="fa fa-circle-o"></i></div>-->
+<!--  <div class="timeline-content">-->
+<!--    <div class="row">-->
+<!--      <div class="timeline-custom-col">-->
+<!--        <div class="image-hotel-view-block">-->
+<!--          <div class="slider-for group2">-->
+            <%# hotel_room.hotel_room_pictures.each do |img| %>
+<!--              <div class="item"><%#= image_tag img, class:'img-responsive', alt:'' %></div>-->
+            <%# end %>
+<!--          </div>-->
+<!--          <div class="slider-nav group2">-->
+            <%# hotel_room.hotel_room_pictures.each do |img| %>
+<!--              <div class="item"><%#= image_tag img, class:'img-responsive', alt:'' %></div>-->
+            <%# end %>
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="timeline-custom-col image-col hotels-layout">-->
+<!--        <div class="content-wrapper">-->
+<!--          <div class="content">-->
+<!--            <div class="title">-->
+<!--              <div class="price"><sup>Pkr</sup><span class="number"><%#= hotel_room.price %></span></div>-->
+<!--              <p class="for-price">per night</p></div>-->
+<!--          </div>-->
+<!--          <div class="btn-group">-->
+            <%# if !current_user.is_hotel_manager.nil? %>
+              <%# if current_user.id == @hotel.hotel_manager.user_id %>
+<!--                <div><a class="btn btn-primary" href="<%#= edit_hotel_hotel_room_path(@hotel, hotel_room) %>">Edit Hotel Room</a></div>-->
+<!--                <div>-->
+<!--                  <button class="btn btn-danger">-->
+<!--                    <%#= link_to 'Delete',hotel_hotel_room_path(@hotel, hotel_room),-->
+                                 data: { confirm: 'Are you sure?' }, method: :delete, class: "delete-hotel-room", remote: true %>
+                     </button>-->
+<!--                </div>-->
+              <%# end %>
+            <%# end %>
+<!--          </div>-->
+<!--          <div class="wrapper-journey">-->
+            <%# if hotel_room.heater %>
+<!--              <div class="item feature-item"><i class="icon-journey glyph-icon flaticon-heater"></i>-->
+<!--                <p class="text">Heater</p>-->
+<!--              </div>-->
+            <%# end %>
+            <%# if hotel_room.air_conditioned %>
+<!--              <div class="item feature-item"><i class="icon-journey glyph-icon flaticon-air-conditioner"></i>-->
+<!--                <p class="text">Air Conditioned</p>-->
+<!--              </div>-->
+            <%# end %>
+            <%# if hotel_room.tv %>
+<!--              <div class="item feature-item"><i class="icon-journey glyph-icon flaticon-screen"></i>-->
+<!--                <p class="text">TV</p>-->
+<!--              </div>-->
+            <%# end %>
+            <%# if hotel_room.kitchenette %>
+<!--              <div class="item feature-item"><i class="icon-journey glyph-icon flaticon-chef"></i>-->
+<!--                <p class="text">Kitchenette</p>-->
+<!--              </div>-->
+            <%# end %>
+            <%# if hotel_room.refrigerator %>
+<!--              <div class="item feature-item"><i class="icon-journey glyph-icon flaticon-fridge"></i>-->
+<!--                <p class="text">Refrigerator</p>-->
+<!--              </div>-->
+            <%# end %>
+            <%# if hotel_room.microwave %>
+<!--              <div class="item feature-item"><i class="icon-journey glyph-icon flaticon-microwave"></i>-->
+<!--                <p class="text">Microwave</p>-->
+<!--              </div>-->
+            <%# end %>
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->

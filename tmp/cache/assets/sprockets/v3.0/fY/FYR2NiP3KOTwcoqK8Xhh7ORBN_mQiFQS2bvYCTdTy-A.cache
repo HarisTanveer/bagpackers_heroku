@@ -1,0 +1,43 @@
+{:uriI"áfile://node_modules/faye-websocket/examples/sse.html?type=text/html&id=e30d4332a2bd0a311b1930c43a94204043c774858461d4a69359f018102e3789:ET:load_pathI"node_modules;T:filenameI"2node_modules/faye-websocket/examples/sse.html;T:	nameI" faye-websocket/examples/sse;T:logical_pathI"%faye-websocket/examples/sse.html;T:content_typeI"text/html;T:sourceI"U<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>EventSource test</title>
+  </head>
+  <body>
+
+    <h1>EventSource test</h1>
+    <ul></ul>
+
+    <script type="text/javascript">
+      var logger = document.getElementsByTagName('ul')[0],
+          socket = new EventSource('/');
+
+      var log = function(text) {
+        logger.innerHTML += '<li>' + text + '</li>';
+      };
+
+      socket.onopen = function() {
+        log('OPEN');
+      };
+
+      socket.onmessage = function(event) {
+        log('MESSAGE: ' + event.data);
+      };
+
+      socket.addEventListener('update', function(event) {
+        log('UPDATE(' + event.lastEventId + '): ' + event.data);
+      });
+
+      socket.onerror = function(event) {
+        log('ERROR: ' + event.message);
+      };
+    </script>
+
+  </body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"@file-digest://node_modules/faye-websocket/examples/sse.html;TTF:charsetI"
+utf-8;F:digest"%õ%EasCÛD?Âﬁw^WaÆÀÀ‚DïÙr◊r«g∫^:lengthiU:dependencies_digest"%Ü¸∞Ød˜—‘n&>Ù•†pe˝±-nÅ´Ø¥Äzà≈¬]:idI"Ee30d4332a2bd0a311b1930c43a94204043c774858461d4a69359f018102e3789;F:
+mtimel+˙bÜ^

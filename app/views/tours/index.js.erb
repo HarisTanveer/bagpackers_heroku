@@ -1,0 +1,3 @@
+$('div[id^="tour-"]').remove();
+$("#tours_div").html("<%= escape_javascript(render @tours) %>");
+$("#tour-paginate").html("<%= j js_will_paginate @tours %>");

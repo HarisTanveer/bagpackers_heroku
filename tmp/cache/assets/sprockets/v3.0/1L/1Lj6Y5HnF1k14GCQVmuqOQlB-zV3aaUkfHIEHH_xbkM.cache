@@ -1,0 +1,23 @@
+{:uriI"file://node_modules/uri-js/tests/test-es5.html?type=text/html&id=d0e2e30abd43f666524a6d9b8469d905c746ea80e62f0318dff5b457a86a7387:ET:load_pathI"node_modules;T:filenameI",node_modules/uri-js/tests/test-es5.html;T:	nameI"uri-js/tests/test-es5;T:logical_pathI"uri-js/tests/test-es5.html;T:content_typeI"text/html;T:sourceI"c<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+      "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <link rel="stylesheet" href="qunit.css" type="text/css"/>
+    <script type="text/javascript" src="qunit.js"></script>
+    <script type="text/javascript" src="../dist/es5/uri.all.js"></script>
+    <script type="text/javascript" src="tests.js"></script>
+  </head>
+  <body>
+    <h1 id="qunit-header">URI.js Test Suite</h1>
+    <h2 id="qunit-banner"></h2>
+    <div id="qunit-testrunner-toolbar"></div>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+  </body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI":file-digest://node_modules/uri-js/tests/test-es5.html;TTF:charsetI"
+utf-8;F:digest"%iØu,Æ$õïu@Ì¶Äx?÷G,`S/Q‰óåMnÎ:lengthic:dependencies_digest"%ôH7ÇŒ)ƒJ¼§›ğ{8Æí
+ ‚Š÷(Â]ï’2S:idI"Ed0e2e30abd43f666524a6d9b8469d905c746ea80e62f0318dff5b457a86a7387;F:
+mtimel+Úb†^

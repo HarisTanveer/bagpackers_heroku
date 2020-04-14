@@ -1,0 +1,86 @@
+<div class="col-md-4 col-sm-6 col-xs-12" id="hotel-<%= hotel.id %>">
+  <div class="package-item">
+    <a href="<%= hotel_path(hotel) %>">
+      <div class="hotel-thumbnail">
+        <% if hotel.hotel_cover_photos.attached? %>
+          <%= image_tag url_for(hotel.hotel_cover_photos[0])  , class: "hotel-cover-photo-thumbnail", alt:"Image"%>
+        <% else %>
+          <%= image_tag url_for("")  , class: "hotel-cover-photo-thumbnail", alt:"Image" %>
+        <% end %>
+      </div>
+      <div class="package-content">
+        <h5>Contact: <span><%= hotel.number %></span></h5>
+        <h3><a href="<%= hotel_path(hotel) %>"><%= hotel.name %></a></h3>
+        <p><%= hotel.address %></p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<%# if controller_name== "welcome" %>
+<!--  <div class="col-sm-4" id="tour-<%#= hotel.id %>">-->
+<%# else %>
+<!--  <div class="col-sm-6" id="tour-<%#= hotel.id %>">-->
+<%# end %>
+<!--  <div class="tours-layout">-->
+<!--    <div class="image-wrapper">-->
+<!--      <a href="<%#= hotel_path(hotel) %>" class="link">-->
+        <%# if hotel.hotel_cover_photo.attached? %>
+          <%#= image_tag url_for(hotel.hotel_cover_photo)  , class: "img-responsive", style: "height: 200px" %>
+        <%# else %>
+          <%#= image_tag url_for("")  , class: "img-responsive", style: "height: 200px" %>
+        <%# end %>
+<!--      </a>-->
+<!--      <div class="title-wrapper">-->
+<!--        <a href="<%#= hotel_path(hotel) %>" class="title"><%#= hotel.name %></a>-->
+<!--        <is class="icons flaticon-circle"></is>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="content-wrapper">-->
+<!--      <ul class="list-info list-inline list-unstyle">-->
+<!--        <li>-->
+<!--          <a href="#" class="link">-->
+<!--            <i class="icons fa fa-eye"></i>-->
+<!--            <span class="text number">234</span>-->
+<!--          </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <a href="#" class="link">-->
+<!--            <i class="icons fa fa-heart"></i>-->
+<!--            <span class="text number">234</span>-->
+<!--          </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <a href="#" class="link">-->
+<!--            <i class="icons fa fa-comment"></i>-->
+<!--            <span class="text number">234</span>-->
+<!--          </a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <div class="content">-->
+<!--        <div class="title">-->
+<!--          <div class="price">-->
+<!--            <sup>Tel</sup>-->
+<!--            <span class="number"><%#= hotel.number %></span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <p class="text"><%#= hotel.address %></p>-->
+<!--        <div class="group-btn-tours">-->
+<!--          <a href="<%#= url_for hotel %>" class="btn-primary">See More</a>-->
+<!--        </div>-->
+<!--        <div class="group-btn-tours">-->
+          <%# if controller_name!= "welcome" %>
+            <%# if !current_user.is_hotel_manager.nil? %>
+              <%# if hotel.hotel_manager_id == current_user.hotel_manager.id %>
+                <%#= link_to hotel_path(hotel), method: :delete, remote: true do %>
+<!--                  <button class="btn-danger">Delete</button>-->
+                <%# end %>
+              <%# end %>
+            <%#end %>
+          <%# end %>
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->

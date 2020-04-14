@@ -1,0 +1,68 @@
+<%= form_tag charges_path(@booking.id) do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+  </article>
+<div class="container">
+  <h3 style="text-align: center"> Checkout </h3>
+  <hr>
+  <table id="cart" class="table table-hover table-condensed">
+    <thead>
+    <tr>
+      <th style="width:50%">Tour</th>
+      <th style="width:10%">Price</th>
+      <th style="width:8%">Seats</th>
+      <th style="width:22%" class="text-center">Subtotal</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td data-th="Product">
+        <div class="row">
+          <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
+          <div class="col-sm-10">
+            <h4 class="nomargin"> <%= @booking.tour.title  %> </h4>
+            <div>
+              <p>Name : <%= @booking.user.name  %></p>
+              <p>Email : <%= @booking.user.email  %></p>
+              <p>Phone : <%= @booking.user.phone_number  %></p>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td data-th="Price"><%= @booking.tour.price %></td>
+      <td data-th="Quantity">
+        <%= @booking.no_of_seats %>
+      </td>
+      <td data-th="Subtotal" class="text-center"><%= @booking.payment_amount %> RS</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr class="visible-xs">
+      <td class="text-center"><strong>Total 1.99</strong></td>
+    </tr>
+    <tr>
+      <td>
+        <%= link_to 'Delete', tour_booking_path(@booking.tour,@booking), class:"btn btn-danger", method: :delete %>
+      </td>
+      <td colspan="2" class="hidden-xs"></td>
+      <td class="hidden-xs text-center"><strong><%= @booking.payment_amount %> RS</strong></td>
+      <td>
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                data-description="Pay for Trip"
+                data-amount="<%= @booking.payment_amount * 100 %>"
+                data-email="<%= current_user.email %>"
+                data-currency="pkr"
+                data-locale="auto">
+        </script>
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>
+
+<% end %>
